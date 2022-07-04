@@ -9,20 +9,27 @@ import { CityComponent } from './city/city.component';
 import {HttpClientModule, HTTP_INTERCEPTORS} from  '@angular/common/http';
 import { ApiResponseComponent } from './api-response/api-response.component';
 import { HttpErrorInterceptor } from 'src/http-error-interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxJsonViewerModule } from 'ngx-json-viewer';
+// import { AceEditorModule } from 'ng2-ace-editor';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CityComponent,
-    ApiResponseComponent
+    ApiResponseComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxJsonViewerModule,
+    // AceEditorModule
   ],
   providers: [
     {

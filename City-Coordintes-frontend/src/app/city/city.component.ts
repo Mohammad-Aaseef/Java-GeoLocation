@@ -12,6 +12,7 @@ import { CityServiceService } from '../services/city-service.service';
   styleUrls: ['./city.component.css']
 })
 export class CityComponent implements OnInit {
+  title = 'City-Coordintes';
   value: any;
   apiResponse: any;
   subscription: Subscription = new Subscription;
@@ -50,6 +51,8 @@ export class CityComponent implements OnInit {
     }
     );
  }
+
+ 
 
  ngOnDestroy() {
   this.subscription.unsubscribe();
