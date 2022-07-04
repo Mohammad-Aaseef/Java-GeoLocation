@@ -1,0 +1,41 @@
+input:invalid {
+    border-color: red;
+}
+input,
+input:valid {
+    border-color: #ccc;
+}
+
+    #btn{
+    font-size: 25px;
+    }
+
+    .input-wrap {
+        position: relative; /* needs to be set on the parent element */
+        margin-bottom: 22px;
+      }
+      
+      .label {
+        position: absolute; /* positioned relative to the parent element; taken out of the normal document flow */
+        left: -117px; /* moved left by negative 102px (width) + 15px (margin-right) because the default value is 0 */
+        display: inline-block;
+        width: 150px;
+        /* text-align: right;
+        font-size: 20px; */
+        /*margin-right: 15px; not necessary anymore, i.e. has no affect on label elements*/
+      }
+      
+      .input {
+        width: 172px;
+        height: 30px;
+        font-size: 20px;
+        border: 1px solid rgb(0, 0, 0);
+      }
+      form {
+        display: flex; /* displays children (divs) inline by default thats why you need to change its direction */
+        flex-direction: column; /* stacks children vertically */
+        align-items: center; /* horizontal alignment / centering / affects only input elements since label elements are taken out of the normal document flow */
+        position: relative;
+        margin: 0 auto;
+        margin-top: 44px;
+      }
